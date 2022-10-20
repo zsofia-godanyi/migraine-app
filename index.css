@@ -11,7 +11,7 @@ body {
 
 img {
    max-width: 100%;
-   height: 10em;
+   height: 200px;
    display: block;
 }
 
@@ -24,12 +24,32 @@ h1 {
 }
 
 h2 {
-   font-size: 2,5rem;
+   font-size: 2,75rem;
+}
+
+p {
+   font-size:1.25rem;
 }
 
 /*Form*/
+input {
+   margin: 0.5em 0;
+   padding: 0.5em;
+   border-radius: 10%;
+   border:none;
+   color:#43686e;
+   font-family: inherit;
+   font-size: 1rem;
+}
+
+input:hover,
+input:focus {
+   outline:none;
+}
+
 label {
-   margin-bottom: 5em;
+   font-size: 1.5rem;
+   font-weight: bold;
 }
 
 /*Buttons*/
@@ -39,7 +59,7 @@ label {
    font-family: inherit;
    background: white;
    color:#43686e;
-   font-size: 1rem;
+   font-size: 1.25rem;
    padding: 0.5em 1em;
    margin-bottom: 1em;
    border-radius: 5%;
