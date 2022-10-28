@@ -17,6 +17,7 @@ img {
    border-radius: 10px;
 }
 
+
 h1,h2 {
    margin-top: 0;
 }
@@ -66,6 +67,7 @@ label {
    margin-bottom: 1em;
    border-radius: 5%;
    border: none;
+   cursor: pointer;
 }
 
 .btn:focus,
@@ -81,12 +83,21 @@ label {
 /* Media Queries */
 
 @media(min-width:600px){
-.wrapper {
-   display: flex;
-   justify-content: space-between;
-}
+   .wrapper {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      padding: 0 2em;
+   }
 
-.image-container {
-   margin-left: 2em;
-}
-}
+   .image-container {
+      margin-left: 2em;
+      align-items:flex-start;
+   }
+
+   img{
+      max-width: 100%; 
+      height: auto; 
+      justify-items: center;
+      align-items: center;
+      }
+   }
