@@ -83,21 +83,30 @@ label {
 /* Media Queries */
 
 @media(min-width:600px){
+   .home-page h1{
+      font-size: 4rem;
+   }
+   
+   .home-page h2 {
+      font-size: 3rem;
+   }
+   
+   .home-page p {
+      font-size:2rem;
+   }
+
    .wrapper {
       display: grid;
       grid-template-columns: 1.5fr 1fr;
-      padding: 0 2em;
+      padding: 0 2em;  
    }
 
    .image-container {
-      margin-left: 2em;
-      align-items:flex-start;
+      align-self: center;
    }
 
    img{
       max-width: 100%; 
       height: auto; 
-      justify-items: center;
-      align-items: center;
       }
    }
