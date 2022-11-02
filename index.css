@@ -50,10 +50,19 @@ input:focus {
    outline:none;
 }
 
-label {
-   font-size: 1.5rem;
-   font-weight: bold;
+label,
+form p {
+   font-size: 1.15rem;
+   font-weight: 700;
 }
+.period {
+   max-width:55px;
+}
+
+.weather {
+   font-weight: 400;
+}
+
 
 /*Buttons*/
 .btn {
@@ -62,7 +71,7 @@ label {
    font-family: inherit;
    background: white;
    color:#43686e;
-   font-size: 1.25rem;
+   font-size: 1rem;
    padding: 0.5em 1em;
    margin-bottom: 1em;
    border-radius: 5%;
@@ -83,18 +92,7 @@ label {
 /* Media Queries */
 
 @media(min-width:600px){
-   .home-page h1{
-      font-size: 4rem;
-   }
-   
-   .home-page h2 {
-      font-size: 3rem;
-   }
-   
-   .home-page p {
-      font-size:2rem;
-   }
-
+  
    .wrapper {
       display: grid;
       grid-template-columns: 1.5fr 1fr;
@@ -110,3 +108,26 @@ label {
       height: auto; 
       }
    }
+
+@media(min-width:1000px){
+   h1{
+      font-size: 4rem;
+   }
+      
+   .home-page h2 {
+      font-size: 3rem;
+   }
+      
+   .home-page p {
+      font-size:2rem;
+   }
+   
+   .btn {
+      font-size: 1.25rem;
+   }
+
+   label,
+   form p {
+      font-size: 1.5rem;
+   }
+}
