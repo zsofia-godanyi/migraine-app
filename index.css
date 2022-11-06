@@ -66,11 +66,12 @@ form p {
 
 /*Buttons*/
 .btn {
-   display:block;
+   display:inline-block;
    font-weight: bold;
    font-family: inherit;
    background: white;
    color:#43686e;
+   text-decoration:none;
    font-size: 1rem;
    padding: 0.5em 1em;
    margin-bottom: 1em;
@@ -85,14 +86,29 @@ form p {
    color: white;
 }
 
+.submit-btn {
+   margin-right: 1em;
+   background:#43686e;
+   color: white;
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+   background: white;
+   color:#43686e;
+}
+.cancel-btn:focus,
+.cancel-btn:hover {
+   background: brown;
+}
+
 
 /*Layout */
 
 
 /* Media Queries */
 
-@media(min-width:600px){
-  
+@media(min-width: 600px){
    .wrapper {
       display: grid;
       grid-template-columns: 1.5fr 1fr;
@@ -107,7 +123,7 @@ form p {
       max-width: 100%; 
       height: auto; 
       }
-   }
+}
 
 @media(min-width:1000px){
    h1{
